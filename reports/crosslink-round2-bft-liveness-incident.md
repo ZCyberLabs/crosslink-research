@@ -9,7 +9,7 @@
 
 After Tenderlink/BFT activity became live on the participating finalizer, the node successfully completed an earlier BFT height and then stopped making local BFT progress at the following height while the underlying network continued advancing.
 
-The retained logs also show extreme STP receive-side queue pressure and long processing delays during the incident window. This is strong evidence that receive-load/backpressure materially affected local liveness. It is not yet sufficient to prove the exact implementation-level root cause.
+The retained logs also show extreme STP receive-side queue pressure and long processing delays during the incident window. The receive-side pressure coincided with the liveness failure and may have contributed to it. The exact causal relationship remains unresolved, and the evidence is not sufficient to identify the implementation-level root cause.
 
 Accordingly, ZCyberLabs is publishing this as a **liveness incident observation**, not as a confirmed Crosslink/Tenderlink bug attribution.
 
